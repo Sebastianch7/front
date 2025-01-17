@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "target": "ES5",                          // Objetivo de JavaScript (ES5 es ampliamente soportado)
+      "lib": ["dom", "es2015"],                  // Librerías que el proyecto utilizará
+      "jsx": "react-jsx",                        // Configuración para JSX (utiliza la nueva sintaxis de React 17+)
+      "moduleResolution": "node",                // Resolución de módulos compatible con Node.js
+      "esModuleInterop": true,                   // Para importar módulos CommonJS
+      "skipLibCheck": true,                      // Omitir la verificación de tipos de las librerías
+      "strict": true,                            // Habilitar comprobaciones estrictas de tipo
+      "noImplicitAny": true,                     // No permitir tipos "any" implícitos
+      "resolveJsonModule": true,                 // Permite importar archivos JSON como módulos
+      "module": "ESNext",                        // Tipo de módulos, ESNext es recomendado
+      "outDir": "./build",                       // Directorio donde se colocarán los archivos compilados
+      "rootDir": "./src"                         // Directorio raíz donde se encuentran los archivos fuente
+    },
+    "include": [
+      "src/**/*"                                 // Incluir todos los archivos dentro de la carpeta src
+    ],
+    "exclude": [
+      "node_modules"                             // Excluir node_modules para que no se compile
+    ]
+  }
+  
